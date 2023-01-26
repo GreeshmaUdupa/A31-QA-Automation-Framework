@@ -46,6 +46,7 @@ public class HomePage extends BasePage {
     }
 
     public void clickPlusIcon() {
+        wait.until(ExpectedConditions.elementToBeClickable(plusIcon));
         plusIcon.click();
     }
 
