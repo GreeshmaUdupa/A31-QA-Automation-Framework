@@ -23,7 +23,7 @@ public class HomePage extends BasePage {
     private WebElement newPlaylistButton;
     @FindBy(css = "input[name='name']")
     private WebElement playlistInputField;
-    @FindBy(css = "[class='del btn-delete-playlist']")
+    @FindBy(css = "button[class='del btn-delete-playlist']")
     private WebElement deleteButton;
     @FindBy(css = "div.success.show")
     private WebElement successMsg;
@@ -61,6 +61,7 @@ public class HomePage extends BasePage {
 
     //Delete the selected playlist
     public void deleteDesiredPlaylist() {
+        wait.until(ExpectedConditions.elementToBeClickable(deleteButton));
         deleteButton.click();
     }
 
