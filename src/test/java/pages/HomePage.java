@@ -46,7 +46,6 @@ public class HomePage extends BasePage {
     }
 
     public void clickPlusIcon() {
-        wait.until(ExpectedConditions.elementToBeClickable(plusIcon));
         plusIcon.click();
     }
 
@@ -61,7 +60,6 @@ public class HomePage extends BasePage {
 
     //Delete the selected playlist
     public void deleteDesiredPlaylist() {
-        wait.until(ExpectedConditions.elementToBeClickable(deleteButton));
         deleteButton.click();
     }
 
