@@ -46,7 +46,7 @@ public class BaseTest {
         threadDriver.set(driver);
         wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
         actions = new Actions(getDriver());
-//        getDriver().manage().window().maximize();
+        getDriver().manage().window().maximize();
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         getDriver().get(url);
     }

@@ -35,7 +35,7 @@ public class BasePage {
 
     public void doubleClick(WebElement locator) {
         wait.until(ExpectedConditions.elementToBeClickable(locator));
-        actions.doubleClick(locator).perform();
+        actions.doubleClick(locator).build().perform();
     }
 
     public void waitClick(By locator) {
